@@ -19,6 +19,7 @@ public class Demo1Application {
 			public void addCorsMappings(CorsRegistry registry) {
 				// Cambiar origin en produción por la url de edl Robanesky
 				String origin = "*";
+				
 				registry.addMapping("/**").allowedHeaders("Authorization", "Accept", "Content-Type", "Referer", "User-Agent").allowedOrigins(origin).allowedMethods("GET", "POST", "OPTIONS", "PUT", "DELETE");
 			}
 		};
